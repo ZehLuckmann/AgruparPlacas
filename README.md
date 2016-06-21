@@ -1,23 +1,22 @@
 # AgruparPlacas
+##José Henrique Luckmann
 Organizador de placas utilizando ponteiros em pascal.
 
 #Documentação:
 
-Documentação
-
-procedure leitura;
+`procedure leitura`
 
     Parametros: var p:String;
     Resultado: nenhum;
     Descrição: Responsável por pegar o valor que o usuário informar na tela.
     
-procedure IniciaPlacas
+`procedure IniciaPlacas`
 
     Parametros: var Fila:ptPlacas;
     Resultado: nenhum;
     Descrição: Inicia o ponteiro que vai armazenar as placas do sistema.
 
-function IncluiPlaca
+`function IncluiPlaca`
 
     Parametros: var fila:ptPlaca
                 inf:Sring;
@@ -25,7 +24,7 @@ function IncluiPlaca
     Descrição: Aloca um espaço na memória e depois insere o valor da placa informada dentro deste 
     espaço. No final retorna o endereço que esta placa foi inserida.
 
-function ExcluiPlaca
+`function ExcluiPlaca`
 
     Parametros: var fila:ptPlaca;
                 inf:String;
@@ -33,26 +32,26 @@ function ExcluiPlaca
     Descrição: Percorre todos os valores de uma determinada sequencia de placas, ao encontrar um 
     valor igual ao informado pelo usuário ele exclui este registro e refaz as ligações. 
     
-function ListaPlacas
+`function ListaPlacas`
 
     Parametros: fila:ptPlaca
     Resultado: byte;
     Descrição:  Percorre toda a sequencia de placas informando seus respectivos valores. Ao chegar 
     no final retorna a quantidade de placas listadas.
     
-function RetornaCodPlaca
+`function RetornaCodPlaca`
 
     Parametros: placa:String;
     Resultado: String;
     Descrição: Retorna o código da placa informada. Exemplo, AAA-1234 -> AAA-[12]34 -> 12.
     
-procedure IniciaElementos
+`procedure IniciaElementos`
 
     Parametros: var Fila:ptElemento;
     Resultado: nenhum;
     Descrição: Inicia o ponteiro que vai armazenar os elementos do sistema.
 
-function IncluiElemento
+`function IncluiElemento`
 
     Parametros: var fila:ptElemento
                 inf:Sring;
@@ -62,7 +61,7 @@ function IncluiElemento
     inserção sequencial, do menor para o maior, toda vez que um novo elemento é inserido ele ajusta 
     a estrutura para alocar ele na sua posição correta.   
 
-function ExcluiElemento
+`function ExcluiElemento`
 
     Parametros: var fila:ptElemento;
                 inf:String;
@@ -70,7 +69,7 @@ function ExcluiElemento
     Descrição: Percorre todos os elementos, ao encontrar um valor igual ao informado ele exclui este
     registro e refaz as ligações.     
     
-function ListaElementos
+`function ListaElementos`
 
     Parametros: fila:ptPlaca
     Resultado: byte;
@@ -78,7 +77,7 @@ function ListaElementos
     ListaPlacas para listar seu "sub-ponteiro" que esta armazenando as placas. Ao chegar no final 
     retorna a quantidade de elementos listados.
     
-function RetornaElemento
+`function RetornaElemento`
 
     Parametros: codPlaca:String;
                 element:ptElemento;
@@ -86,7 +85,7 @@ function RetornaElemento
     Descrição: Percorre toda a sequência de placas até achar o endereço referente ao código informado.
     No final define como resultado o endereço encontrado.
     
-function IncluiPlacaElemento
+`function IncluiPlacaElemento`
 
     Parametros: pl:String;
                 var element:ptlElemento
@@ -94,7 +93,7 @@ function IncluiPlacaElemento
     Descrição: Insere a placa dentro de um elemento. Se o elemento não existir ele cria e depois 
     insere a placa dentro dele.
     
-function ExcluiPlacaElemento
+`function ExcluiPlacaElemento`
 
     Parametros: pl:String;
                 var element:ptlElemento
