@@ -32,13 +32,19 @@ function IncluiPlaca
     espaço. No final retorna o endereço que esta placa foi inserida.
 
 function ExcluiPlaca
+
     Parametros: var fila:ptPlaca;
+    
                 inf:String;
+                
     Resultado: Boolean;
+    
     Descrição: Percorre todos os valores de uma determinada sequencia de placas, ao encontrar um 
+    
     valor igual ao informado pelo usuário ele exclui este registro e refaz as ligações. 
     
 function ListaPlacas
+
     Parametros: fila:ptPlaca
     Resultado: byte;
     Descrição:  Percorre toda a sequencia de placas informando seus respectivos valores. Ao chegar 
