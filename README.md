@@ -4,20 +4,31 @@ Organizador de placas utilizando ponteiros em pascal.
 #Documentação:
 
 procedure leitura;
+
     Parametros: var p:String;
+    
     Resultado: nenhum;
+    
     Descrição: Responsável por pegar o valor que o usuário informar na tela.
     
 procedure IniciaPlacas
-    Parametros: var Fila:ptPlacas;
-    Resultado: nenhum;
-    Descrição: Inicia o ponteiro que vai armazenar as placas do sistema.
 
+    Parametros: var Fila:ptPlacas;
+    
+    Resultado: nenhum;
+    
+    Descrição: Inicia o ponteiro que vai armazenar as placas do sistema.
+    
 function IncluiPlaca
+
     Parametros: var fila:ptPlaca
+    
                 inf:Sring;
+                
     Resultado: ptPlaca;
+    
     Descrição: Aloca um espaço na memória e depois insere o valor da placa informada dentro deste 
+    
     espaço. No final retorna o endereço que esta placa foi inserida.
 
 function ExcluiPlaca
